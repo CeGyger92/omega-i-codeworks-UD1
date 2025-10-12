@@ -1,0 +1,6 @@
+@UD1Engine_HostAddress = http://localhost:5152
+
+GET {{UD1Engine_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

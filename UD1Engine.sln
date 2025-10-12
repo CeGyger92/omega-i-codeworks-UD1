@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UD1Engine", "UD1Engine\UD1Engine.csproj", "{3F23F134-ACE1-44ED-BFF4-099687BB3F02}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UD1Chassis", "UD1Chassis\UD1Chassis.csproj", "{AD7E7DFF-253D-4212-A977-C959D7AEAD3D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3F23F134-ACE1-44ED-BFF4-099687BB3F02}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F23F134-ACE1-44ED-BFF4-099687BB3F02}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F23F134-ACE1-44ED-BFF4-099687BB3F02}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F23F134-ACE1-44ED-BFF4-099687BB3F02}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD7E7DFF-253D-4212-A977-C959D7AEAD3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD7E7DFF-253D-4212-A977-C959D7AEAD3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD7E7DFF-253D-4212-A977-C959D7AEAD3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD7E7DFF-253D-4212-A977-C959D7AEAD3D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
