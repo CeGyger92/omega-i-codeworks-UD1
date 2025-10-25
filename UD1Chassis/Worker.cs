@@ -32,15 +32,17 @@ public class Worker : BackgroundService
         Porcupine porcupine = Porcupine.FromKeywordPaths(
             accessKey: _porcupineOptions.ApiKey,
             keywordPaths: ["Resources/U-D-One_en_linux_v3_0_0.ppn"],
-            sensitivities: [0.85f]
+            sensitivities: [0.9f]
         );
         while (!stoppingToken.IsCancellationRequested)
         {
             short[] audioFrame = GetNextAudioFrame();
+            // Log first 10 values of the audio frame for debugging
+            //_logger.LogInformation($"AudioFrame: [{string.Join(", ", audioFrame.Take(10))} ...]");
             int keywordIndex = porcupine.Process(audioFrame);
             if(keywordIndex == 0)
             {
-                _logger.LogDebug("Detected 'U-D-One'");
+                _logger.LogInformation("Detected 'U-D-One'");
             }
         }
     }
